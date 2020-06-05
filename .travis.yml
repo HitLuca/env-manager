@@ -1,0 +1,12 @@
+language: python
+python:
+  - "3.7"
+
+install:
+  - pip install pipenv
+  - pipenv install --dev --deploy --system --ignore-pipfile
+
+script:
+  - python -m pytest
+  - pylint -f parseable --errors-only --rcfile setup.cfg env_manager
+  - mypy --strict env_manager
