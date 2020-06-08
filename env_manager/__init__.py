@@ -40,8 +40,8 @@ class EnvManager:
         """
         assert isinstance(env_mapping, Enum)
         assert (
-            env_mapping.value in os.environ
-        ), f"variable {env_mapping.value} doesn't exist in environment"
+            env_mapping.name in os.environ
+        ), f"variable {env_mapping.name} doesn't exist in environment"
 
     @staticmethod
     def get_string(env_mapping: Enum, can_be_empty: bool = False) -> str:
