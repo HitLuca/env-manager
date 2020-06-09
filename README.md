@@ -1,6 +1,7 @@
 # env-manager
 
 [![Build Status](https://travis-ci.com/HitLuca/env-manager.svg?branch=master)](https://travis-ci.com/HitLuca/env-manager)
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FHitLuca%2Fenv-manager)](https://hits.seeyoufarm.com)
 [![code style](https://img.shields.io/badge/code%20style-black-black)](https://black.readthedocs.io/en/stable/)
 
 Environment variables manager to ensure consistency and remove human errors. Access to env variables should be done through the EnvManager class, which ensures that the environment is consistent with the user expectations.
